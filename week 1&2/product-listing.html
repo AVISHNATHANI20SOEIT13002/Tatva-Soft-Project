@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+  <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon" />
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon.png" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-384x384.png" />
+  <link rel="icon" type="image/png" sizes="192x192" href="images/favicon/android-chrome-192x192.png" />
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon/mstile-150x150.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png" />
+  <meta name="msapplication-TileColor" content="#ffffff" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>Tatvasoft</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+  <div>
+  <div class="wrapper" style="width: 1200px; margin: 0 auto;">
+    <header class="site-header" id="header">
+      <div class="site-header-wrapper">
+        <div class="container">
+          <div class="header-wrapper">
+            <div class="logo-wrapper">
+              <a class="site-logo" title="logo" href="#"><img src="images/site-logo.svg" alt="Tatvasoft" /></a>
+            </div>
+            <div class="nav-wrapper">
+              <div class="top-right-bar">
+                <ul class="top-nav-bar">
+                  <li>
+                    <a title="Login" href="#">Login</a>
+                  </li>
+                  <li>
+                    <a title="Register" href="#">Register</a>
+                  </li>
+                </ul>
+                <ul class="cart-country-wrap">
+                  <li class="cart-link">
+                    <a title="Cart" href="#"><img src="images/cart.svg" alt="cart" /><span>0</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-search-wrapper">
+        <div class="container">
+          <div class="header-search-outer">
+            <div class="header-search-inner">
+              <div class="text-wrapper">
+                <div class="form-group-wrapper">
+                  <div class="form-group">
+                    <label style="display: none" for="search-text">Search</label>
+                    <input id="search-text" name="text" placeholder="What are you looking for..." type="text"
+                      class="form-control" value="" />
+                  </div>
+                </div>
+                <div class="product-listing">
+                  <p class="no-product">No product found</p>
+                  <p class="loading">Loading....</p>
+                  <ul class="related-product-list">
+                    <li>
+                      <div class="inner-block">
+                        <div class="left-col">
+                          <span class="title">Title 1</span><span class="category">Category</span>
+                          <p>Description</p>
+                        </div>
+                        <div class="right-col">
+                          <span class="price">1000</span><a href="#">Add to cart</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner-block">
+                        <div class="left-col">
+                          <span class="title">Title 1</span><span class="category">Category</span>
+                          <p>Description</p>
+                        </div>
+                        <div class="right-col">
+                          <span class="price">1000</span><a href="#">Add to cart</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner-block">
+                        <div class="left-col">
+                          <span class="title">Title 1</span><span class="category">Category</span>
+                          <p>Description</p>
+                        </div>
+                        <div class="right-col">
+                          <span class="price">1000</span><a href="#">Add to cart</a>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="inner-block">
+                        <div class="left-col">
+                          <span class="title">Title 1</span><span class="category">Category</span>
+                          <p>Description</p>
+                        </div>
+                        <div class="right-col">
+                          <span class="price">1000</span><a href="#">Add to cart</a>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <button class="btn green-btn" type="submit">
+                <em><img src="images/search.svg" alt="search" /></em>Search
+              </button>
+              <button class="btn blue-btn" type="submit">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="create-account-page-wrapper">
+      <div>
+        <h1>Product Listing</h1>
+      </div>
+      <div>
+        <h2>Product Name - 14366 items</h2>
+        <div class="dropdown pull-right">
+          <a class="dropdown-toggle text-muted" data-toggle="dropdown" href="#" id="dropdown-sortmode" title="Sort">
+            <small><span class="glyphicon glyphicon-sort"></span>&nbsp;Sort By</small>
+          </a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdown-sortmode">
+            <li role="menuitem"><a href="${question.collection.configuration.value("
+                ui.modern.search_link")}?${removeParam(QueryString,["start_rank","sort"])?html}"><span
+                  class="glyphicon glyphicon-sort-by-attributes-alt"></span>a-z</a></li>
+            <li role="menuitem"><a href="${question.collection.configuration.value("
+                ui.modern.search_link")}?${removeParam(QueryString,["start_rank","sort"])?html}&amp;sort=date"><span
+                  class="glyphicon glyphicon-sort-by-order-alt"></span>z-a</a></li>
+          </ul>
+       </div>
+      </div>
+      <div class="cointainer">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="images/dummy-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Product Title</h2>
+              <h6>Lorem</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet </br>consectetur adipisicing
+                elit.Hic</br> qui facere voluptas quibusdam,</br>repellet quia ex blanditiis</br>
+                recusandae odio sint!</p>
+              <p>MRP <strike>₹1000</strike></p>
+              <h4>₹800</h4>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block">ADD TO CART</button>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/dummy-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Product Title</h2>
+              <h6>Lorem</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet </br>consectetur adipisicing
+                elit.Hic</br> qui facere voluptas quibusdam,</br>repellet quia ex blanditiis</br>
+                recusandae odio sint!</p>
+              <p>MRP <strike>₹1000</strike></p>
+              <h4>₹800</h4>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block">ADD TO CART</button>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/dummy-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Product Title</h2>
+              <h6>Lorem</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet </br>consectetur adipisicing
+                elit.Hic</br> qui facere voluptas quibusdam,</br>repellet quia ex blanditiis</br>
+                recusandae odio sint!</p>
+              <p>MRP <strike>₹1000</strike></p>
+              <h4>₹800</h4>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block">ADD TO CART</button>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/dummy-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Product Title</h2>
+              <h6>Lorem</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet </br>consectetur adipisicing
+                elit.Hic</br> qui facere voluptas quibusdam,</br>repellet quia ex blanditiis</br>
+                recusandae odio sint!</p>
+              <p>MRP <strike>₹1000</strike></p>
+              <h4>₹800</h4>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block">ADD TO CART</button>
+          </div>
+        </div>
+      </div>
+      <div class="sec-2" style="width: 50%; float: left;">
+        <div class="card-deck">
+          <div class="card">
+            <img class="card-img-top" src="images/dummy-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Product Title</h2>
+              <h6>Lorem</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet </br>consectetur adipisicing elit.Hic</br>
+                qui facere voluptas quibusdam,</br>repellet quia ex blanditiis</br> recusandae odio
+                sint!</p>
+              <p>MRP <strike>₹1000</strike></p>
+              <h4>₹800</h4>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block mx-auto">ADD TO CART</button>
+          </div>
+          <div class="card">
+            <img class="card-img-top" src="images/dummy-image.png" alt="Card image cap">
+            <div class="card-body">
+              <h2 class="card-title">Product Title</h2>
+              <h6>Lorem</h6>
+              <p class="card-text">Lorem ipsum dolor sit amet </br>consectetur adipisicing elit.Hic</br>
+                qui facere voluptas quibusdam,</br>repellet quia ex blanditiis</br> recusandae odio
+                sint!</p>
+              <p>MRP <strike>₹1000</strike></p>
+              <h4>₹800</h4>
+            </div>
+            <button type="button" class="btn btn-danger btn-lg btn-block">ADD TO CART</button>
+          </div>
+        </div>
+        </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-wrapper">
+        <div class="container">
+          <div class="logo-wrapper " style="flex: 0 0 140px;max-width: 140px; margin-left: 50%; margin-top: 55%;">
+            <a class="site-logo" title="logo" href="#"><img src="images/site-logo.svg" alt="Tatvasoft" /></a>
+          </div>
+          <p class="copyright-text">
+            © 2022 Tatvasoft.com. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
